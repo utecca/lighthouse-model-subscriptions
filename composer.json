@@ -1,0 +1,44 @@
+{
+  "name": "utecca/lighthouse-subscriptions",
+  "type": "library",
+  "description": "An easy solution to model subscriptions via Lighthouse GraphQL",
+  "keywords": [
+    "graphql",
+    "laravel",
+    "laravel-graphql",
+    "lighthouse",
+    "buoy",
+    "subscriptions"
+  ],
+  "homepage": "https://ngx-buoy.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Albert Haff",
+      "email": "albert@utecca.com"
+    }
+  ],
+  "require": {
+    "bensampo/laravel-enum": "^3.1",
+    "nuwave/lighthouse": "v4.18.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bouy\\LighthouseSubscriptions\\SubscriptionServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Buoy\\LighthouseSubscriptions\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/utecca/lighthouse-subscriptions/issues",
+    "source": "https://github.com/utecca/lighthouse-subscriptions"
+  }
+}
